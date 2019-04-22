@@ -1260,6 +1260,7 @@ var PartialEvaluator = (function PartialEvaluatorClosure() {
         }
         textContentItem.fontName = font.loadedName;
         textContentItem.originalFontName = font.name;
+        textContentItem.italic = font.italic;
 
         // 9.4.4 Text Space Details
         var tsm = [textState.fontSize * textState.textHScale, 0,
@@ -1340,6 +1341,7 @@ var PartialEvaluator = (function PartialEvaluatorClosure() {
           height: textChunk.height,
           transform: textChunk.transform,
           fontName: textChunk.fontName,
+          italic: textChunk.italic,
           originalFontName: textChunk.originalFontName,
         };
       }

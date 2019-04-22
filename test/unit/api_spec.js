@@ -1169,6 +1169,7 @@ describe('api', function() {
             expect(items[0]).toEqual({
               dir: 'ltr',
               fontName: 'Times',
+              italic: false,
               originalFontName: 'Times-Roman',
               height: 18,
               str: 'Issue 8276',
